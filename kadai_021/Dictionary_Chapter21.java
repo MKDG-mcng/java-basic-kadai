@@ -11,18 +11,18 @@ import java.util.HashMap;
 	dic.put("peach","桃");
 	dic.put("banana","バナナ");
 	dic.put("lemon","レモン");
-	dic.put("pear","なし");
-	dic.put("kiwi","キウイ");
+	dic.put("pear","梨");
+	dic.put("kiwi","キウィ");
 	dic.put("strawberry","いちご");
 	dic.put("grape","ぶどう");
-	dic.put("muscu","マスカット");
+	dic.put("muscut","マスカット");
 	dic.put("cherry","さくらんぼ");
 }
 	
 	public void searchWords(String[] words) {
         for (String word : words) {
             if (dic.containsKey(word)) {
-                System.out.println(word + "の意味は" + dic.get(word) + "です");
+                System.out.println(word + "の意味は" + dic.get(word));
             } else {
                 System.out.println(word + "は辞書に存在しません");
             }
