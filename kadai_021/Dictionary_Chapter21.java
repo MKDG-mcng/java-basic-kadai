@@ -1,8 +1,7 @@
 package kadai_021;
-
 import java.util.HashMap;
 
- public class Dictionary_Chapter21{
+public class Dictionary_Chapter21{
 	 
 	HashMap<String,String> dic = new HashMap<String,String>();
 	
@@ -15,17 +14,17 @@ import java.util.HashMap;
 	dic.put("kiwi","キウィ");
 	dic.put("strawberry","いちご");
 	dic.put("grape","ぶどう");
-	dic.put("muscut","マスカット");
+	dic.put("muscat","マスカット");
 	dic.put("cherry","さくらんぼ");
 }
 	
 	public void searchWords(String[] words) {
-        for (String word : words) {
-            if (dic.containsKey(word)) {
-                System.out.println(word + "の意味は" + dic.get(word));
-            } else {
-                System.out.println(word + "は辞書に存在しません");
-            }
-        }
+       for (String word : words) {
+           if (dic.containsKey(word)) {
+               System.out.println(word + "の意味は" + dic.get(word));
+           } else {
+               System.out.println(word + "は辞書に存在しません");
+           }
+       }
 	}
 }
